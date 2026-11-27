@@ -1,10 +1,6 @@
 ---
 name: go-dev
-description: >-
-  Use this skill whenever writing, modifying, refactoring, reviewing, or testing
-  Go code (.go files), including cross-workspace edits and Windows + WSL2 Linux
-  builds. Covers package/file/naming/struct/interface/function design, Chinese
-  @brief comments, test coverage, core benchmarks, and gofmt/vet/race gates.
+description: 编写、修改、重构、审查或测试 Go 代码（.go）时使用，涵盖跨目录修改与 Windows + WSL2 Linux 构建；包含包与文件拆分、命名、结构体/接口/并发停机规范、中文 @brief 注释、覆盖率、核心 Benchmark 与 gofmt/vet/-race 门禁。
 ---
 
 # Go 代码风格与工程规范（go-dev）

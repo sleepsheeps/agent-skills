@@ -1,12 +1,6 @@
 ---
 name: unit-test
-description: >-
-  Use this skill whenever designing, writing, hardening, auditing, or reviewing
-  unit tests, integration tests, or black-box E2E tests (across Go, C++, Python,
-  TypeScript, or backend/infra services). Covers anti-false-green discipline,
-  state-by-path matrices, realistic physical scale tests, deterministic
-  concurrency testing, poison-pill/fairness/ordering tests, config/time/FS
-  boundary checks, and mutation self-checks.
+description: 设计、编写、加固或审查单元测试、集成测试与黑盒 E2E 测试（Go/C++/Python/TypeScript 及后端基础设施）时使用；涵盖覆盖率双标准、反假绿与删修复必红自检、状态×路径矩阵、真实物理尺度、确定性并发、毒丸公平性与配置/文件/时间边界。
 ---
 
 # 单元测试与对抗性测试工程规范（unit-test）
