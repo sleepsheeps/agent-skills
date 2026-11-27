@@ -103,8 +103,3 @@ Linux 代码（Windows 环境下在 WSL2 执行）修改 `.go` 后必须执行�
 3. 竞态与逐函数覆盖率检查：`CGO_ENABLED=1 go test -race -coverprofile=/tmp/go-cover.out <改动包> && go tool cover -func=/tmp/go-cover.out`（WSL 默认可能为 `CGO_ENABLED=0`，跑 `-race` 需显式开启；用逐函数明细确认无核心逻辑 `0%` 盲区，需要看行级红绿高亮时可用 `go tool cover -html=/tmp/go-cover.out`）
 4. 核心包基准测试：`go test -run=^$ -bench=. -benchmem <核心包>`
 5. 按需静态构建检查：`CGO_ENABLED=0 go build -buildvcs=false <cmd路径>`
-
-## 7. 分阶段推进与文档同步
-
-- 复杂任务按阶段推进，每阶段通过门禁后停下来汇报核心文件、测试与基准结果，确认后再进下一阶段。
-- 协议、配置、接口或目录行为变动时，同步更新设计/运维文档。
